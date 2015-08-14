@@ -5,7 +5,7 @@ package programmingproblems;
  * @author Alberto Dal Dosso
  */
 public class Node {
-    private final Node next;
+    private Node next;
     private final int data;
 
     public Node(int data) {
@@ -17,4 +17,16 @@ public class Node {
         this.data = data;
     }
 
+    public Node getNext() {
+        return next;
+    }
+
+    public int getData() {
+        return data;
+    }
+
+    void setNext(Node node) {
+        this.next = node;
+    }
+    
 }
