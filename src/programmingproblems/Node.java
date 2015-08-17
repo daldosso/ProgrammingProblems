@@ -6,7 +6,7 @@ package programmingproblems;
  */
 public class Node {
     private Node next;
-    private final int data;
+    private int data;
 
     public Node(int data) {
         this(null, data);
@@ -27,6 +27,10 @@ public class Node {
 
     void setNext(Node node) {
         this.next = node;
+    }
+
+    void setData(int data) {
+        this.data = data;
     }
     
 }

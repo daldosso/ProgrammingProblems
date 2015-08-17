@@ -18,6 +18,15 @@ public class ADLinkedList {
             return result + count(node.getNext());
         }
     }
+    
+    public static int countIt(Node node) {
+        int result = 1;
+        while (node.getNext() != null) {
+            node = node.getNext();
+            result++;
+        }
+        return result;
+    }
 
     public static Node insertSorted(Node head, int data) {
         if (head == null || data <= head.getData()) {
@@ -33,6 +42,14 @@ public class ADLinkedList {
             current.setNext(new Node(current.getNext(), data));
         }
         return head;
+    }
+
+    public static void changeNodeData(Node head, int data) {
+        head.setData(data);
+    }
+
+    public static void changeNodeNext(Node node, Node next) {
+        node.setNext(next);
     }
 
 }
